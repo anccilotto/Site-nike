@@ -152,5 +152,47 @@ main section{
     width: 100%;
     height: 100%;
     background: #26a126e5;
-    clip-path: circle(800px at right 1000px);
+    clip-path: circle(900px at right 1000px);
+}
+
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 20px 20px;
+        /* Reduzir o padding do cabeçalho */
+    }
+
+    .navigation ul {
+        gap: 20px;
+        /* Reduzir o espaçamento entre os itens do menu */
+    }
+
+    /* Ajustar o tamanho da fonte para telas menores, se necessário */
+    .main-text h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilos para telas maiores */
+@media screen and (min-width: 1400px) {
+    .main section {
+        padding: 5rem 20rem;
+        /* Ajustar o padding para telas maiores */
+    }
+
+    .main-text img {
+        width: 25rem;
+        /* Reduzir ligeiramente o tamanho da imagem */
+    }
+
+    .main-text .content span {
+        width: 30px;
+        /* Reduzir o tamanho dos elementos de escolha de cor */
+        height: 30px;
+    }
+
+    .main-img img {
+        width: 800px;
+        /* Ajustar o tamanho da imagem principal */
+    }
 }
